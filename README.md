@@ -73,3 +73,32 @@ pip install -r requirements.txt
 ```bash
 python -m src.main
 ```
+
+
+# Запуск через Docker
+
+## Требования:
+- Docker установлен и запущен
+
+### Установка образа
+```bash
+docker pull kiruganich/calculator
+```
+### Запуск калькулятора в интерактивном режиме
+```bash
+docker run -it kiruganich/calculator
+```
+## Запуск с bind mount
+
+### Linux / macOS:
+```bash
+docker run -it -v $(pwd):/app calculator
+```
+### Windows:
+```bash
+# PowerShell
+docker run -it -v ${PWD}:/app calculator
+
+# CMD
+docker run -it -v %cd%:/app calculator
+```

@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+
+# Тесты и документация
+tests/
+docs/
+*.md
+README.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Временные файлы
+*.tmp
+temp/
